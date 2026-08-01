@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="om">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salphaa Image Compressor</title>
+    <title>Salphaa Image Compressor - Free Online Tool</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        .container { max-width: 500px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
-        input, button { margin: 10px 0; padding: 10px; width: 100%; box-sizing: border-box; }
-        button { background-color: #007bff; color: white; border: none; cursor: pointer; }
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 20px; background-color: #f4f7f6; color: #333; }
+        .container { max-width: 650px; margin: 30px auto; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { color: #007bff; font-size: 24px; }
+        p { color: #555; font-size: 14px; line-height: 1.6; }
+        input, button { margin: 12px 0; padding: 12px; width: 100%; box-sizing: border-box; border-radius: 6px; font-size: 16px; }
+        input[type="file"] { border: 1px solid #ccc; background: #fff; }
+        button { background-color: #007bff; color: white; border: none; cursor: pointer; font-weight: bold; }
         button:hover { background-color: #0056b3; }
-        img { max-width: 100%; margin-top: 20px; display: none; }
+        img { max-width: 100%; margin-top: 20px; border-radius: 8px; display: none; }
+        
+        /* Footer & Privacy Policy Styles */
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; text-align: left; font-size: 13px; color: #666; }
+        footer h3 { color: #333; margin-bottom: 5px; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2>Image Compressor Salphaa</h2>
+    <h1>Salphaa Image Compressor</h1>
+    <p>Suuraa keessan qulqullina isaa osoo hin miiyyin saayizii (MB irraa gara KB-tti) bilisaan hir'isaa.</p>
     
     <!-- Suuraa Galchuu -->
     <input type="file" id="uploadImage" accept="image/jpeg, image/png">
@@ -29,8 +37,22 @@
     
     <!-- Button Suuraa Buufachuu -->
     <a id="downloadLink" download="compressed_image.jpg" style="display: none;">
-        <button>Download</button>
+        <button style="background-color: #28a745;">Download Suuraa</button>
     </a>
+
+    <!-- Footer & Privacy Policy -->
+    <footer>
+        <h3>Privacy Policy (Imammata Dhuunfaa)</h3>
+        <p>
+            Website-iin kun privacy keessaniif bakka guddaa kenna. Suuraan isin ol-fe'tan (upload gootan) kamiyyuu server irratti ol-hin kaa'amu ykn hin tamsaasamu. 
+            Process-iin suuraa xinneessuu guutummaatti browser (bilbila ykn kompiyuutara) keessan irratti qofa raawwatama.
+        </p>
+        
+        <h3>About Us</h3>
+        <p>
+            Meeshaan kun tajaajila bilisaa kan suuraa saayizii xinneessuuf qophaa'edha. Maallaqa tokko malee itti fayyadamuu dandeessu.
+        </p>
+    </footer>
 </div>
 
 <script>
@@ -54,11 +76,9 @@
             img.src = event.target.result;
             
             img.onload = function() {
-                // Canvas uumuu
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
                 
-                // Saayizii suuraa sirreessuu (fakkeenyaaf, 800px qofa gochuu)
                 const MAX_WIDTH = 800;
                 let width = img.width;
                 let height = img.height;
@@ -70,14 +90,10 @@
                 
                 canvas.width = width;
                 canvas.height = height;
-                
-                // Suuraa canvas irratti kaasu
                 ctx.drawImage(img, 0, 0, width, height);
                 
-                // Qulqullina suuraa (Quality) hir'isuu (0.7 jechuun 70% dha)
                 const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.7);
                 
-                // Suuraa haaraa fi download link agarsiisuu
                 compressedImg.src = compressedDataUrl;
                 compressedImg.style.display = 'block';
                 downloadLink.href = compressedDataUrl;
