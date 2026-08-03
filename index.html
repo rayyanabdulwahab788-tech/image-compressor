@@ -1,6 +1,40 @@
 
 
 <!DOCTYPE html>
+<div class="card-container">
+  <!-- Card 1 -->
+  <div class="card blue-card">
+    <div class="imgBx">
+      <img src="my-bg.jpg" alt="Image 1">
+    </div>
+    <div class="contentBx">
+      <h2>Image Compressor</h2>
+      <div class="size">
+        <h3>Quality :</h3>
+        <span>70%</span>
+        <span>80%</span>
+        <span>90%</span>
+      </div>
+      <a href="#">Compress Now</a>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card red-card">
+    <div class="imgBx">
+      <img src="my-bg.jpg" alt="Image 2">
+    </div>
+    <div class="contentBx">
+      <h2>Fast & Free</h2>
+      <div class="size">
+        <h3>Speed :</h3>
+        <span>High</span>
+        <span>Ultra</span>
+      </div>
+      <a href="#">Try Now</a>
+    </div>
+  </div>
+</div>
 
 <head>
     <!-- SEO Meta Tags -->
@@ -23,6 +57,171 @@
     <meta name="monetag" content="da7e348763c8e4a5d83b6b2c51b6f5fc">
     <title>Salphaa Image Compressor - Free Online Tool</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0d131d; /* Background Dukkana Ammayyaa */
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Card Structure */
+.card {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  background: #192a56;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.card.blue-card { background: #182848; }
+.card.red-card { background: #4b1220; }
+
+/* Background Text (Barruu gubbaa card irraa) */
+.card::before {
+  content: 'TOOL';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 8em;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image Box (Sochii Suuraa) */
+.card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+.card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  border-radius: 12px;
+  transition: 0.5s;
+}
+
+/* Content Box (Gara gaditti kan ol ba'u) */
+.card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.card:hover .contentBx {
+  height: 210px;
+}
+
+.card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.card .contentBx .size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.card .contentBx .size h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.card .contentBx .size span {
+  width: 45px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 12px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 4px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Button "Compress/Buy Now" */
+.card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.7s;
+}
+
         20260801_123812.jpg
         /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
