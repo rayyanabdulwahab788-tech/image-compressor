@@ -14,7 +14,7 @@
       margin: 0;
     }
     .container {
-      max-width: 450px;
+      max-width: 480px;
       margin: 0 auto;
       background: #1e293b;
       padding: 25px;
@@ -58,8 +58,33 @@
       border-radius: 8px;
       font-weight: bold;
     }
+    .info-box {
+      margin-top: 25px;
+      padding: 15px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.08);
+      text-align: left;
+    }
+    .info-box h3 {
+      margin-top: 0;
+      color: #38bdf8;
+      font-size: 16px;
+    }
+    .info-box p {
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+    .info-box ul {
+      padding-left: 18px;
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
     .support-box {
-      margin-top: 30px;
+      margin-top: 25px;
       padding: 15px;
       background: rgba(255,255,255,0.05);
       border-radius: 10px;
@@ -97,6 +122,19 @@
     <img id="compressedImg" alt="Suuraa Xinnaate">
     <br>
     <a id="downloadLink" download="compressed_image.jpg">Suuraa Buufadhu (Download)</a>
+
+    <!-- Waa'ee Appii Kanaa (About Section) -->
+    <div class="info-box">
+      <h3>ℹ️ Waa'ee Meeshaa Kanaa</h3>
+      <p>
+        <b>Salphaa Image Compressor</b> meeshaa bilisa ta'ee fi suuraa keessan utuu qulqullina isaa hin balleessin hamma (size) MB/KB isaa akka malee xiqqeessuuf isin gargaarudha. Speicher bilbila ykn kompiotara keessanii qusachuuf akkasumas interneetiin salphaatti erguuf fayyada.
+      </p>
+      <ul>
+        <li>🔒 <b>Nageenya Ol-aanaa:</b> Suuraan keessan server irratti hin fe'amu, bilbila keessan irratti qofa hojjeta.</li>
+        <li>⚡ <b>Saffisaa:</b> Daqiiqaa muraasa keessatti akkuma galchitaniin isiniif xiqqeessa.</li>
+        <li>💯 <b>Bilisa:</b> Kaffaltii malee yeroo barbaaddanitti fayyadamuu dandeessu.</li>
+      </ul>
+    </div>
 
     <!-- Section Deeggarsaa -->
     <div class="support-box">
@@ -144,7 +182,6 @@
           canvas.height = height;
           ctx.drawImage(img, 0, 0, width, height);
 
-          // Suuraa %70n xinneessuu (0.7 quality)
           const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.7);
 
           compressedImg.src = compressedDataUrl;
