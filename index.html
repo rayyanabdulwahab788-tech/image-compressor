@@ -1,886 +1,162 @@
-
-
 <!DOCTYPE html>
-<!-- Support / Deeggarsa Section -->
-<div class="support-card">
-  <h3>☕ Nu Deeggaruu Barbaadduu?</h3>
-  <p>Hojii keenya yoo jaallattan, kaffaltii deeggarsaa nuuf erguu dandeessu!</p>
-  
-  <div class="payment-methods">
-    <!-- Telebirr Box -->
-    <div class="payment-box">
-      <span>📱 <strong>Telebirr:</strong></span>
-      <span class="phone-num">0973357016</span>
-    </div>
-    
-    <!-- Buy Me A Coffee Button -->
-    <a href="buymeacoffee.com/rayyaan">
-      ☕ Buy Me a Coffee
-    </a>
-  </div>
-</div>
-
-<div class="card-container">
-  <!-- Card 1 -->
-  <div class="card blue-card">
-    <div class="imgBx">
-      <img src="my-bg.jpg" alt="Image 1">
-    </div>
-    <div class="contentBx">
-      <h2>Image Compressor</h2>
-      <div class="size">
-        <h3>Quality :</h3>
-        <span>70%</span>
-        <span>80%</span>
-        <span>90%</span>
-      </div>
-      <a href="#">Compress Now</a>
-    </div>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="card red-card">
-    <div class="imgBx">
-      <img src="my-bg.jpg" alt="Image 2">
-    </div>
-    <div class="contentBx">
-      <h2>Fast & Free</h2>
-      <div class="size">
-        <h3>Speed :</h3>
-        <span>High</span>
-        <span>Ultra</span>
-      </div>
-      <a href="#">Try Now</a>
-    </div>
-  </div>
-</div>
-
+<html lang="om">
 <head>
-    <!-- SEO Meta Tags -->
-<meta name="description" content="Salphaa Image Compressor - Free online tool to compress PNG, JPG, and WEBP images fast without losing quality.">
-<meta name="keywords" content="image compressor, reduce image size, suuraa xinneessuu, free image compressor, photo resizer online">
-<meta name="author" content="Rayyan">
-<meta name="robots" content="index, follow">
-
-<!-- Social Media Preview (Open Graph) -->
-    <my-bg.jpg>
-<meta property="og:title" content="Salphaa Image Compressor - Free Online Tool">
-<meta property="og:description" content="Compress your images easily and quickly online for free.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://image-compressor-rayyaan2.vercel.app">
-
-    <meta name="monetag" content="da7e348763c8e4a5d83b6b2c51b6f5fc">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="monetag" content="da7e348763c8e4a5d83b6b2c51b6f5fc">
-    <title>Salphaa Image Compressor - Free Online Tool</title>
-    <style>
-      <div style="text-align:center; margin:30px auto; padding:20px; background:rgba(255,255,255,0.08); border-radius:12px; color:white; width:90%;">
-  <h3 style="margin-bottom:8px;">☕ Nu Deeggaruu Barbaadduu?</h3>
-  <p style="font-size:13px; color:#ddd; margin-bottom:15px;">Hojii keenya yoo jaallattan, kaffaltii deeggarsaa nuuf erguu dandeessu!</p>
-  
-  <div style="border:1px dashed #38bdf8; padding:10px; border-radius:8px; margin-bottom:15px; background:rgba(56,189,248,0.1); color:#38bdf8; font-weight:bold;">
-    📱 Telebirr: 097335016
-  </div>
-
-  <a href="https://buymeacoffee.com/Rayyaan" target="_blank" style="background:#ffdd00; color:#000; padding:12px 22px; border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block; box-shadow: 0 4px 10px rgba(255,221,0,0.3);">
-    ☕ Buy Me a Coffee
-  </a>
-</div>
-
-      /* Global Reset */
-* {
-  box-sizing: border-box !important;
-  max-width: 100% !important;
-}
-
-html, body {
-  margin: 0 !important;
-  padding: 10px !important;
-  width: 100% !important;
-  overflow-x: hidden !important;
-  font-family: sans-serif;
-}
-
-/* Bilbila irratti ol-fi-gadi (Column) akka hiriiran godha */
-body, main, .container, section, div {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  width: 100% !important;
-}
-
-/* Card-oota fi saanduqoota guutuu godha */
-.card, div, section {
-  width: 100% !important;
-  margin-bottom: 15px !important;
-}
-
-      <div style="text-align:center; margin:30px auto; padding:20px; background:rgba(255,255,255,0.1); border-radius:12px; color:white; max-width:100%;">
-  <h3 style="margin-bottom:10px;">☕ Nu Deeggaruu Barbaadduu?</h3>
-  <a href="https://buymeacoffee.com/Rayyaan" target="_blank" style="background:#ffdd00; color:#000; padding:12px 20px; border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block;">
-    ☕ Buy Me a Coffee
-  </a>
-</div>
-
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #0d131d; /* Background Dukkana Ammayyaa */
-}
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 20px;
-}
-
-/* Card Structure */
-.card {
-  position: relative;
-  width: 320px;
-  height: 420px;
-  background: #192a56;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-}
-
-.card.blue-card { background: #182848; }
-.card.red-card { background: #4b1220; }
-
-/* Background Text (Barruu gubbaa card irraa) */
-.card::before {
-  content: 'TOOL';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-size: 8em;
-  font-weight: 800;
-  color: rgba(255, 255, 255, 0.05);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Image Box (Sochii Suuraa) */
-.card .imgBx {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1000;
-  width: 100%;
-  height: 220px;
-  transition: 0.5s;
-}
-
-.card:hover .imgBx {
-  top: 0%;
-  transform: translateY(0%);
-}
-
-.card .imgBx img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  border-radius: 12px;
-  transition: 0.5s;
-}
-
-/* Content Box (Gara gaditti kan ol ba'u) */
-.card .contentBx {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  transition: 1s;
-  z-index: 10;
-}
-
-.card:hover .contentBx {
-  height: 210px;
-}
-
-.card .contentBx h2 {
-  position: relative;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.card .contentBx .size {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 20px;
-  transition: 0.5s;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.card:hover .contentBx .size {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.5s;
-}
-
-.card .contentBx .size h3 {
-  color: #fff;
-  font-weight: 300;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-right: 10px;
-}
-
-.card .contentBx .size span {
-  width: 45px;
-  height: 26px;
-  text-align: center;
-  line-height: 26px;
-  font-size: 12px;
-  display: inline-block;
-  color: #111;
-  background: #fff;
-  margin: 0 4px;
-  border-radius: 4px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-/* Button "Compress/Buy Now" */
-.card .contentBx a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #fff;
-  border-radius: 8px;
-  margin-top: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #111;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 0.5s;
-}
-
-.card:hover .contentBx a {
-  opacity: 1;
-  transform: translateY(0px);
-  transition-delay: 0.7s;
-}
-
-        20260801_123812.jpg
-        /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
-
-/* Background Suuraa Kee Guutuu Website (Dark Overlay Waliin) */
-body
-        body {
-  /* Suuraa kee Dark Overlay waliin kaawwachuuf */
-  background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
-              url('LINKII_SUURAA_KEETII') no-repeat center center/cover;
-  color: #f8fafc;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-        {
-  background: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.82)), 
-              url('my-bg.jpg') no-repeat center center / cover;
-  background-attachment: fixed;
-  color: #f8fafc;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-/* Card Guddaa (Glassmorphism Effect - Saanduqa Calaqqisaa) */
-.container {
-  background: rgba(30, 41, 59, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 24px;
-  padding: 35px;
-  max-width: 550px;
-  width: 100%;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-}
-
-/* Mata Duree Website */
-h1 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 8px;
-  background: linear-gradient(to right, #60a5fa, #a78bfa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-p.subtitle {
-  text-align: center;
-  color: #cbd5e1;
-  font-size: 0.95rem;
-  margin-bottom: 25px;
-}
-
-/* Upload Area (Bakka Suuraa Galchan) */
-.upload-area {
-  border: 2px dashed rgba(96, 165, 250, 0.6);
-  border-radius: 16px;
-  padding: 35px 20px;
-  text-align: center;
-  background: rgba(59, 130, 246, 0.08);
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.upload-area:hover {
-  background: rgba(59, 130, 246, 0.2);
-  border-color: #60a5fa;
-  transform: translateY(-2px);
-}
-
-/* Button-oota */
-.btn-compress {
-  width: 100%;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  color: #ffffff;
-  border: none;
-  padding: 14px;
-  border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.5);
-}
-
-.btn-compress:hover {
-  background: linear-gradient(135deg, #1d4ed8, #1e40af);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px -5px rgba(37, 99, 235, 0.7);
-}
-
-/* Slider Quality */
-.range-container {
-  margin-top: 20px;
-}
-
-.range-container label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  color: #cbd5e1;
-  margin-bottom: 8px;
-}
-
-input[type="range"] {
-  width: 100%;
-  accent-color: #3b82f6;
-}
-
-        /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
-
-/* Background Suuraa Kee Guutuu Website (Dark Overlay Waliin) */
-body {
-  background: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.82)), 
-              url('my-bg.jpg') no-repeat center center / cover;
-  background-attachment: fixed;
-  color: #f8fafc;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-/* Card Guddaa (Glassmorphism Effect - Saanduqa Calaqqisaa) */
-.container {
-  background: rgba(30, 41, 59, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 24px;
-  padding: 35px;
-  max-width: 550px;
-  width: 100%;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-}
-
-/* Mata Duree Website */
-h1 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 8px;
-  background: linear-gradient(to right, #60a5fa, #a78bfa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-p.subtitle {
-  text-align: center;
-  color: #cbd5e1;
-  font-size: 0.95rem;
-  margin-bottom: 25px;
-}
-
-/* Upload Area (Bakka Suuraa Galchan) */
-.upload-area {
-  border: 2px dashed rgba(96, 165, 250, 0.6);
-  border-radius: 16px;
-  padding: 35px 20px;
-  text-align: center;
-  background: rgba(59, 130, 246, 0.08);
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.upload-area:hover {
-  background: rgba(59, 130, 246, 0.2);
-  border-color: #60a5fa;
-  transform: translateY(-2px);
-}
-
-/* Button-oota */
-.btn-compress {
-  width: 100%;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  color: #ffffff;
-  border: none;
-  padding: 14px;
-  border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.5);
-}
-
-.btn-compress:hover {
-  background: linear-gradient(135deg, #1d4ed8, #1e40af);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px -5px rgba(37, 99, 235, 0.7);
-}
-
-/* Slider Quality */
-.range-container {
-  margin-top: 20px;
-}
-
-.range-container label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  color: #cbd5e1;
-  margin-bottom: 8px;
-}
-
-input[type="range"] {
-  width: 100%;
-  accent-color: #3b82f6;
-}
-
-        /* Google Font Barsiisuu */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
-
-/* Background Dark Mode Deep Gray/Navy */
-body {
-  background: radial-gradient(circle at top, #1e293b, #0f172a);
-  color: #f8fafc;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-/* Card Guddaa (Glassmorphism Effect) */
-.container {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 24px;
-  padding: 35px;
-  max-width: 550px;
-  width: 100%;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-}
-
-/* Mata Duree Website */
-h1 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 8px;
-  background: linear-gradient(to right, #60a5fa, #a78bfa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-p.subtitle {
-  text-align: center;
-  color: #94a3b8;
-  font-size: 0.95rem;
-  margin-bottom: 25px;
-}
-
-/* Drop Zone (Bakka Suuraa Galchan) */
-.upload-area {
-  border: 2px dashed #3b82f6;
-  border-radius: 16px;
-  padding: 35px 20px;
-  text-align: center;
-  background: rgba(59, 130, 246, 0.04);
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.upload-area:hover {
-  background: rgba(59, 130, 246, 0.1);
-  border-color: #60a5fa;
-  transform: translateY(-2px);
-}
-
-.upload-icon {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-/* Button Compression & Download */
-.btn-compress {
-  width: 100%;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  color: #ffffff;
-  border: none;
-  padding: 14px;
-  border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.4);
-}
-
-.btn-compress:hover {
-  background: linear-gradient(135deg, #1d4ed8, #1e40af);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px -5px rgba(37, 99, 235, 0.6);
-}
-
-/* Quality Range Slider Styling */
-.range-container {
-  margin-top: 20px;
-}
-
-.range-container label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  color: #cbd5e1;
-  margin-bottom: 8px;
-}
-
-input[type="range"] {
-  width: 100%;
-  accent-color: #3b82f6;
-}
-
-        <meta name="google-site-verification" content="Z2YZSIzrol6-HjksAL7TZOeiwCpYS0mI9h8qN4QhwtY" />
-        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 20px; background-color: #f4f7f6; color: #333; }
-        .container { max-width: 650px; margin: 30px auto; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        h1 { color: #007bff; font-size: 24px; }
-        p { color: #555; font-size: 14px; line-height: 1.6; }
-        input, button { margin: 12px 0; padding: 12px; width: 100%; box-sizing: border-box; border-radius: 6px; font-size: 16px; }
-        input[type="file"] { border: 1px solid #ccc; background: #fff; }
-        button { background-color: #007bff; color: white; border: none; cursor: pointer; font-weight: bold; }
-        button:hover { background-color: #0056b3; }
-        img { max-width: 100%; margin-top: 20px; border-radius: 8px; display: none; }
-        
-        /* Footer & Privacy Policy Styles */
-        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; text-align: left; font-size: 13px; color: #666; }
-        footer h3 { color: #333; margin-bottom: 5px; }
-        <meta name="google-site-verification" content="Z2YZSIzrol6-HjksAL7TZOeiwCpYS0mI9h8qN4QhwtY" />
-      /* Support Card Styling */
-.support-card {
-  margin-top: 25px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  text-align: center;
-}
-
-.support-card h3 {
-  font-size: 1.1rem;
-  color: #60a5fa;
-  margin-bottom: 6px;
-}
-
-.support-card p {
-  font-size: 0.85rem;
-  color: #94a3b8;
-  margin-bottom: 15px;
-}
-
-.payment-methods {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.payment-box {
-  background: rgba(56, 189, 248, 0.08);
-  border: 1px dashed #38bdf8;
-  padding: 10px 15px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #f8fafc;
-  font-size: 0.9rem;
-}
-
-.payment-box .phone-num {
-  font-weight: 700;
-  color: #38bdf8;
-}
-
-.btn-coffee {
-  display: block;
-  background: #ffdd00;
-  color: #000000;
-  font-weight: 700;
-  padding: 11px;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 221, 0, 0.3);
-}
-
-.btn-coffee:hover {
-  transform: translateY(-2px);
-  background: #facc15;
-  box-shadow: 0 6px 20px rgba(255, 221, 0, 0.5);
-}
-      /* Responsive Mobile Fix */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden !important;
-  margin: 0;
-  padding: 10px;
-}
-
-/* Card-oonni fi barruun bilbila irratti ol-fi-gadi akka hiriiran godha */
-div, main, section, .container {
-  max-width: 100% !important;
-  flex-direction: column !important;
-}
-
-
-    </style>
-    <script src="https://pl30654890.effectivecpmnetwork.com/6d/ae/56/6dae56901e3ec676ac060dea7c77d712.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salphaa Image Compressor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
+    .container {
+      max-width: 450px;
+      margin: 0 auto;
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    input[type="file"] {
+      margin: 15px 0;
+      color: white;
+      width: 100%;
+    }
+    button {
+      background-color: #38bdf8;
+      color: #0f172a;
+      border: none;
+      padding: 12px;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #0284c7;
+      color: white;
+    }
+    #compressedImg {
+      max-width: 100%;
+      margin-top: 15px;
+      border-radius: 8px;
+      display: none;
+    }
+    #downloadLink {
+      display: none;
+      margin-top: 15px;
+      background-color: #22c55e;
+      color: white;
+      padding: 12px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .support-box {
+      margin-top: 30px;
+      padding: 15px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .telebirr {
+      border: 1px dashed #38bdf8;
+      padding: 8px;
+      border-radius: 6px;
+      margin: 10px 0;
+      color: #38bdf8;
+      font-weight: bold;
+    }
+    .coffee-btn {
+      background: #ffdd00;
+      color: #000;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      box-shadow: 0 4px 10px rgba(255,221,0,0.3);
+    }
+  </style>
 </head>
-<meta name="google-site-verification" content="Z2YZSIzrol6-HjksAL7TZOeiwCpYS0mI9h8qN4QhwtY" />
 <body>
 
-<div class="container">
-    <div style="text-align: center; margin-bottom: 15px;">
-  <img src="20260802_182036.jpg" alt="Profile" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid #3b82f6; object-fit: cover;">
-</div>
-
-    <h1>Salphaa Image Compressor</h1>
-    <p>Suuraa keessan qulqullina isaa osoo hin miiyyin saayizii (MB irraa gara KB-tti) bilisaan hir'isaa.</p>
+  <div class="container">
+    <h2>Salphaa Image Compressor</h2>
     
-    <!-- Suuraa Galchuu -->
-    <input type="file" id="uploadImage" accept="image/jpeg, image/png">
-    
-    <!-- Button Suuraa Xinneessu -->
+    <input type="file" id="uploadInput" accept="image/*">
     <button id="compressBtn">Suuraa Xinneessi</button>
-    
-    <!-- Suuraa Xinneeffame Agarsiisuu -->
-    <img id="compressedImage" alt="Compressed Image">
-    
-    <!-- Button Suuraa Buufachuu -->
-    <a id="downloadLink" download="compressed_image.jpg" style="display: none;">
-        <button style="background-color: #28a745;">Download Suuraa</button>
-    </a>
 
-    <!-- Footer & Privacy Policy -->
-    <footer>
-        <h3>Privacy Policy (Imammata Dhuunfaa)</h3>
-        <p>
-            Website-iin kun privacy keessaniif bakka guddaa kenna. Suuraan isin ol-fe'tan (upload gootan) kamiyyuu server irratti ol-hin kaa'amu ykn hin tamsaasamu. 
-            Process-iin suuraa xinneessuu guutummaatti browser (bilbila ykn kompiyuutara) keessan irratti qofa raawwatama.
-        </p>
-        
-        <h3>About Us</h3>
-        <p>
-            Meeshaan kun tajaajila bilisaa kan suuraa saayizii xinneessuuf qophaa'edha. Maallaqa tokko malee itti fayyadamuu dandeessu.
-        </p>
-    </footer>
-</div>
+    <img id="compressedImg" alt="Suuraa Xinnaate">
+    <br>
+    <a id="downloadLink" download="compressed_image.jpg">Suuraa Buufadhu (Download)</a>
 
-<script>
-    const uploadInput = document.getElementById('uploadImage');
+    <!-- Section Deeggarsaa -->
+    <div class="support-box">
+      <h3>☕ Nu Deeggaruu Barbaadduu?</h3>
+      <p style="font-size:12px; color:#ccc;">Hojii keenya yoo jaallattan, kaffaltii deeggarsaa nuuf erguu dandeessu!</p>
+      <div class="telebirr">📱 Telebirr: 097335016</div>
+      <a href="https://buymeacoffee.com/Rayyaan" target="_blank" class="coffee-btn">☕ Buy Me a Coffee</a>
+    </div>
+  </div>
+
+  <script>
+    const uploadInput = document.getElementById('uploadInput');
     const compressBtn = document.getElementById('compressBtn');
-    const compressedImg = document.getElementById('compressedImage');
+    const compressedImg = document.getElementById('compressedImg');
     const downloadLink = document.getElementById('downloadLink');
 
     compressBtn.addEventListener('click', () => {
-        const file = uploadInput.files[0];
-        if (!file) {
-            alert("Maaloo, dura suuraa filadhu!");
-            return;
-        }
-
-        const reader = new FileReader();
-        reader.readAsDataURL(file);
-        
-        reader.onload = function(event) {
-            const img = new Image();
-            img.src = event.target.result;
-            
-            img.onload = function() {
-                const canvas = document.createElement('canvas');
-                const ctx = canvas.getContext('2d');
-                
-                const MAX_WIDTH = 800;
-                let width = img.width;
-                let height = img.height;
-                
-                if (width > MAX_WIDTH) {
-                    height *= MAX_WIDTH / width;
-                    width = MAX_WIDTH;
-                }
-                
-                canvas.width = width;
-                canvas.height = height;
-                ctx.drawImage(img, 0, 0, width, height);
-                
-                const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.7);
-                
-                compressedImg.src = compressedDataUrl;
-                compressedImg.style.display = 'block';
-                downloadLink.href = compressedDataUrl;
-                downloadLink.style.display = 'block';
-            }
-        }
-    });
-    <!-- Koodii kee isa kanaan duraa dukaa... -->
-
-  <!-- KOODII BUY ME A COFFEE KANA PASTE GODHI -->
-  <div style="text-align:center; margin-top:30px; padding:20px; background:rgba(255,255,255,0.05); border-radius:12px; color:white;">
-    <h3>☕ Nu Deeggaruu Barbaadduu?</h3>
-    <a href="https://buymeacoffee.com/Rayyaan" target="_blank" style="background:#ffdd00; color:#000; padding:10px 18px; border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block; margin-top:10px;">
-      ☕ Buy Me a Coffee
-    </a>
-  </div>
-      
-document.addEventListener('DOMContentLoaded', () => {
-  const fileInput = document.querySelector('input[type="file"]');
-  const compressBtn = document.querySelector('button');
-
-  if (fileInput && compressBtn) {
-    compressBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const file = fileInput.files[0];
-      
+      const file = uploadInput.files[0];
       if (!file) {
-        alert('Maaloo dura suuraa filadhu!');
+        alert('Maaloo, dura suuraa filadhu!');
         return;
       }
 
       const reader = new FileReader();
       reader.readAsDataURL(file);
-      reader.onload = (event) => {
+
+      reader.onload = function (event) {
         const img = new Image();
         img.src = event.target.result;
-        img.onload = () => {
+
+        img.onload = function () {
           const canvas = document.createElement('canvas');
           const ctx = canvas.getContext('2d');
 
-          canvas.width = img.width;
-          canvas.height = img.height;
-          ctx.drawImage(img, 0, 0);
+          const MAX_WIDTH = 800;
+          let width = img.width;
+          let height = img.height;
 
-          // Suuraa %70n xinneessuun (0.7) download godha
-          canvas.toBlob((blob) => {
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'compressed_' + file.name;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-          }, 'image/jpeg', 0.7);
+          if (width > MAX_WIDTH) {
+            height *= MAX_WIDTH / width;
+            width = MAX_WIDTH;
+          }
+
+          canvas.width = width;
+          canvas.height = height;
+          ctx.drawImage(img, 0, 0, width, height);
+
+          // Suuraa %70n xinneessuu (0.7 quality)
+          const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.7);
+
+          compressedImg.src = compressedDataUrl;
+          compressedImg.style.display = 'block';
+
+          downloadLink.href = compressedDataUrl;
+          downloadLink.style.display = 'inline-block';
         };
       };
     });
-  }
-});
+  </script>
 
 </body>
 </html>
 
-</script>
-
-</body>
-</html>
